@@ -6,8 +6,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.VisibleForTesting;
 
-import com.imastudio.wonder.activity.LoginActivity;
-import com.imastudio.wonder.activity.UtamaWonderActivity;
+
+
+import imastudio.id.co.loginregretrofit.MainActivity;
+import imastudio.id.co.loginregretrofit.activity.LoginActivity;
 
 
 public class SessionManager extends MyFuction {
@@ -73,7 +75,7 @@ public class SessionManager extends MyFuction {
             c.startActivity(i);
         }else {
             /*jika true, pergi ke mainactivity*/
-            Intent i = new Intent(c, UtamaWonderActivity.class);
+            Intent i = new Intent(c, MainActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             c.startActivity(i);
