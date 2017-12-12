@@ -39,8 +39,8 @@ public class LoginActivity extends MyFuction {
     TextInputEditText edtusername;
     @BindView(R.id.edtpassword)
     TextInputEditText edtpassword;
-    @BindView(R.id.regWonder)
-    RadioButton regWonder;
+//    @BindView(R.id.regWonder)
+//    RadioButton regWonder;
     @BindView(R.id.btnLogin)
     Button btnLogin;
     @BindView(R.id.regBtnRegister)
@@ -59,19 +59,19 @@ public class LoginActivity extends MyFuction {
         ButterKnife.bind(this);
         //inisialisasi untuk alias sesi
         sesi = new SessionManager(LoginActivity.this);
-        if (regWonder.isChecked()) {
-            strlevel = "user";
-        }
+//        if (regWonder.isChecked()) {
+//            strlevel = "user";
+//        }
          }
 
-    @OnClick({R.id.regWonder, R.id.btnLogin, R.id.regBtnRegister})
+    @OnClick({R.id.btnLogin, R.id.regBtnRegister})
     public void onViewClicked(View view) {
         strusername =edtusername.getText().toString();
         strpassword =edtpassword.getText().toString();
         switch (view.getId()) {
-            case R.id.regWonder:
-                strlevel ="user";
-                break;
+//            case R.id.regWonder:
+//                strlevel ="user";
+//                break;
             case R.id.btnLogin:
                 if (TextUtils.isEmpty(strusername)) {
                     edtusername.setError("username tidak boleh kosong");
@@ -113,13 +113,15 @@ public class LoginActivity extends MyFuction {
         } else {
              id= Build.SERIAL;
         }
+
+        String dd = MyFuction.getDeviceUUID(c);
         showProgressDialog("proses login user");
         //String tampungdevice = HeroHelper.getDeviceId(LoginActivity.this);
         Toast.makeText(LoginActivity.this, "token"+id, Toast.LENGTH_SHORT).show();
 
         RestApi api = MyRetrofitClient.getInstaceRetrofit();
         Call<ModelUser> modelUserCall = api.loginuser(
-                strusername, strpassword ,id);
+                strusername, strpassword ,dd);
         modelUserCall.enqueue(new Callback<ModelUser>() {
             @Override
             public void onResponse(Call<ModelUser> call, Response<ModelUser> response) {

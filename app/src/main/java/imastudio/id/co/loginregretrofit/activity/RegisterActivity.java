@@ -93,8 +93,8 @@ public class RegisterActivity extends MyFuction {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
-        strlevel = "user";
-        strfoto = "iswandi.jpg";
+        strlevel = "register_volentir";
+        strfoto = "rizki.jpg";
         requeststoragepermission();
         ArrayAdapter adapter = new ArrayAdapter(c, android.R.layout.simple_spinner_item, jenkel);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -332,7 +332,7 @@ public class RegisterActivity extends MyFuction {
                 } else {
 
                     registeruser();
-                    insertphotouser();
+//                    insertphotouser();
                 }
 
                 break;

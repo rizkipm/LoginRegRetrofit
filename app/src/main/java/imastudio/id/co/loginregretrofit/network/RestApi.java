@@ -70,7 +70,7 @@ public interface RestApi {
     Call<ModelKota> getKota(@Query("prov_id") String provid);
 
     @FormUrlEncoded
-    @POST("register")
+    @POST("register_volentir")
     Call<ModelRegisterUser> registerUser(
             @Field("email") String stremail,
             @Field("password") String strpassword,

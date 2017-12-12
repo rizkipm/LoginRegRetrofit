@@ -69,22 +69,22 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <RadioGroup
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="11dp"
-                android:orientation="horizontal">
+            <!--<RadioGroup-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="11dp"-->
+                <!--android:orientation="horizontal">-->
 
-                <RadioButton
-                    android:id="@+id/regWonder"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:text="Wonder" />
+                <!--<RadioButton-->
+                    <!--android:id="@+id/regWonder"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:checked="true"-->
+                    <!--android:text="Wonder" />-->
 
-                </RadioGroup>
+                <!--</RadioGroup>-->
 
             <Button
                 android:layout_width="match_parent"
