@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -26,9 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".MenuUtama.MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
