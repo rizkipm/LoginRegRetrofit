@@ -22,16 +22,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.imastudio.wonder.R;
-import com.imastudio.wonder.helper.MyConstant;
-import com.imastudio.wonder.helper.MyFuction;
-import com.imastudio.wonder.model.DataKota;
-import com.imastudio.wonder.model.DataProvinsi;
-import com.imastudio.wonder.model.ModelKota;
-import com.imastudio.wonder.model.ModelProvinsi;
-import com.imastudio.wonder.model.ModelRegisterUser;
-import com.imastudio.wonder.network.MyRetrofitClient;
-import com.imastudio.wonder.network.RestApi;
+
 
 import java.util.ArrayList;
 import java.util.List;
