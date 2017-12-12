@@ -1,8 +1,9 @@
 package imastudio.id.co.loginregretrofit.network;
 
 
-import com.imastudio.wonder.helper.MyConstant;
 
+
+import imastudio.id.co.loginregretrofit.helper.MyConstant;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
