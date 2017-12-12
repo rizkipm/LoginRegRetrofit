@@ -12,11 +12,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.imastudio.wonder.R;
+
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import imastudio.id.co.loginregretrofit.R;
 
 public class MyFuction extends AppCompatActivity {
 public static Context c;

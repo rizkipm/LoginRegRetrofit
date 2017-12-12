@@ -2,9 +2,8 @@ package imastudio.id.co.loginregretrofit.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import javax.annotation.Generated;
 
-@Generated("com.robohorse.robopojogenerator")
+
 public class DataPertanyaan {
 
 	@SerializedName("updated_at")

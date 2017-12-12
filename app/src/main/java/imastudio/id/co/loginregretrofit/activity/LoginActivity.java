@@ -21,6 +21,14 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import imastudio.id.co.loginregretrofit.MainActivity;
+import imastudio.id.co.loginregretrofit.R;
+import imastudio.id.co.loginregretrofit.helper.MyFuction;
+import imastudio.id.co.loginregretrofit.helper.SessionManager;
+import imastudio.id.co.loginregretrofit.model.DataUser;
+import imastudio.id.co.loginregretrofit.model.ModelUser;
+import imastudio.id.co.loginregretrofit.network.MyRetrofitClient;
+import imastudio.id.co.loginregretrofit.network.RestApi;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -120,7 +128,7 @@ public class LoginActivity extends MyFuction {
                 String r =String.valueOf(result);
                 if (r.equals("true")){
                     myToast("selamat anda berhasil login");
-                    myIntent(UtamaWonderActivity.class);
+                    myIntent(MainActivity.class);
                     String iduser = String.valueOf(response.body().getData().getId());
 
 
